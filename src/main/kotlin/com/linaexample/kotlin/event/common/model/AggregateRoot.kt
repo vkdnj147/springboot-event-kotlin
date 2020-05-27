@@ -6,6 +6,7 @@ import java.util.*
 
 open class AggregateRoot<A : AggregateRoot<A>?> : BaseEntity() {
 
+    //관련된 객체들의 묶음
     @Transient
     private val domainEvents: MutableList<Any?> = ArrayList()
 
